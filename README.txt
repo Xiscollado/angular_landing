@@ -1,1 +1,1 @@
-para lanzar el test HTML: karma start --reporters html,dots
+#Welcome to my angular example landing
