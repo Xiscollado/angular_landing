@@ -1,0 +1,24 @@
+{
+  "name": "glasses-for-the-masses",
+  "version": "0.0.0",
+  "authors": [
+    "Xisco Llado <x.llado@hotelinking.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-mocks": "~1.4.7",
+    "angular": "~1.4.7",
+    "angular-route": "~1.4.7"
+  }
+}

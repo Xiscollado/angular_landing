@@ -1,0 +1,97 @@
+<section class="top-section pattern">
+  <app-header></app-header>
+  <div class="hero-section text-center">
+    <img class="hero-image" ng-src="assets/img/{{heroProduct.image}}" alt="Our featured product">
+    <div class="hero-text text-left">
+      <h2>{{heroProduct.name}}</h2>
+      <p>{{heroProduct.description}}, <a ng-href="{{heroProduct.link}}" title="{{heroProduct.name}}">more details here</a></p>
+      <h2>{{heroProduct.price | currency : '€ '}}</h2>
+      <add-to-cart-button item="{{heroProduct}}"></add-to-cart-button>
+    </div>
+  </div>
+</section>
+
+<section class="product-section row-section">
+  <div class="container">
+    <div class="dynamic-grid" angular-grid="pics" grid-width="235" angular-grid-id="gallery" gutter-size="0" refresh-on-img-load="true" >
+      <product ng-repeat="product in products"></product>
+    </div>
+  </div>
+</section>
+
+<section class="text-center row-section">
+  <h3>combine this super cool glasses with this apparel</h3>
+  <p>We know you love accessories. Those are the top sellings.</p>
+</section>
+
+<section class="apparel-section row-section pattern">
+  <div class="container">
+    <ul class="text-center no-padding">
+      <li class="apparel-product" ng-repeat="apparel in apparels">
+        <img ng-src="assets/img/{{apparel.image}}" alt="{{apparel.name}}">
+        <img class="shadow" ng-src="assets/img/apparel_shadow.png" alt="shadow">
+        <h4>{{apparel.name}}</h4>
+        <h3>{{apparel.price | currency : "€ "}}</h3>
+        <add-to-cart-button item="{{apparel}}"></add-to-cart-button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="text-center row-section">
+  <h3>our glasses are made with love</h3>
+  <p>First quality materials and ancient techniques for all of you.</p>
+</section>
+
+<section class="love-section row-section">
+  <div class="container text-center">
+
+    <div class="col-sm-4">
+      <img ng-src="assets/img/glasses_design_front.gif" alt="glasses design image">
+      <h4>Quality design</h4>
+      <p>We design with care every aspect of the process and review carefully all details.</p>
+    </div>
+
+    <div class="col-sm-4">
+      <img ng-src="assets/img/glasses_design_right.gif" alt="glasses design image">
+      <h4>Made in Palma de Mallorca</h4>
+      <p>We are in love of our island, so we wanted to help local economy with this project.</p>
+    </div>
+
+    <div class="col-sm-4">
+      <img ng-src="assets/img/glasses_design_top.gif" alt="glasses design image">
+      <h4>First grade materials</h4>
+      <p>Using all materials we found in our land we achieved a first grade product.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="text-center row-section">
+  <h3>Be part of our community and win prizes</h3>
+  <p>We feel proud of our community so often we make activities for all.</p>
+</section>
+
+<section class="rrss-section row-section">
+  <div class="container text-center">
+    <div class="col-sm-4">
+      <h4>Join to our weekly newsletter</h4>
+      <p>Add your email to our mailing list and get special offers and discounts</p>
+      <form class="form-inline">
+        <input type="email" class="form-control" placeholder="jane.doe@example.com">
+        <button type="submit" class="btn btn-primary">Join us</button>
+      </form>
+    </div>
+    <div class="col-sm-4">
+      <h4>Follow us on social media</h4>
+      <p>Follow us on mayor social media platforms and win great prizes</p>
+      <social-media-icons></social-media-icons>
+    </div>
+    <div class="col-sm-4">
+      <h4>Read our blog</h4>
+      <p>Find latest news and good articles about our world and be up to date</p>
+      <button class="btn btn-primary">Go to the blog</button>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

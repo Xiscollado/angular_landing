@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <base href="/glasses-for-the-masses/">
+    <title>Glasses for the masses</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="description" content="Buy great glasses and apparel from our online shop">
+    <meta name="keywords" content="glasses, masses, apparel, hipster">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <div data-ng-view></div>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.4.6/angular-route.min.js"></script>
+    <script src="assets/js/angular-grid.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/routes.js"></script>
+    <!--services-->
+    <script src="app/shared/services/countCartItems.js"></script>
+    <script src="app/shared/services/products.js"></script>
+    <!--directives-->
+    <script src="app/shared/directives/addToCartButton.js"></script>
+    <script src="app/shared/directives/product.js"></script>
+    <script src="app/shared/directives/socialMediaIcons.js"></script>
+    <script src="app/components/common/footer/footerDirective.js"></script>
+    <script src="app/components/common/header/headerDirective.js"></script>
+    <script src="app/shared/directives/cartIcon.js"></script>
+    <!--controllers-->
+    <script src="app/components/home/homeController.js"></script>
+  </body>
+</html>
