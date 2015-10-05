@@ -3,6 +3,6 @@
 1. Install npm packages and bower packages
 
 ##Test and deploy
-gulp test // unit testing
-gulp e2e // End to End testing
-gulp deploy // for deploy the app
+1.gulp test // unit testing
+2.gulp e2e // End to End testing
+3,gulp deploy // for deploy the app
