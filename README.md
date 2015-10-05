@@ -6,8 +6,8 @@
 
 ##Test and deploy
 
-1.gulp test for unit testing
+1.gulp test - for unit testing
 
-2.gulp e2e for End to End testing
+2.gulp e2e - for End to End testing
 
-3,gulp deploy for deploy the app
+3.gulp deploy - for deploy the app
