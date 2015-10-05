@@ -10,4 +10,4 @@
 
 2.gulp e2e for End to End testing
 
-3,gulp deploy for for deploy the app
+3,gulp deploy for deploy the app
